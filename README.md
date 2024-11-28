@@ -56,12 +56,3 @@ Contains the main logic:
 - Traverses the sorted array and prints each element in a formatted manner.
 
 ---
-
-## **Code Highlights**
-### **Input Validation**
-```asm
-addi    $v0, $0, 5        # Load syscall for integer input
-syscall
-addi    $at, $v0, -1
-slti    $at, $at, 0
-bne     $at, $0, wrongformat
